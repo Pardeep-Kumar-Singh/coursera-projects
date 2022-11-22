@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin: 2%;
+    font-size: 28px;
+}
+.row{
+    width: 100%;
+    margin-right: 20px;
+}
+.content{
+    clear: both;
+    color: #32353b;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.element{
+    float: left;
+    padding-right: 20px
+}
+.title{
+    position: relative;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    float: right;
+    border: 2px solid black;
+    margin-top: -2px;
+    margin-right: -2px;
+}
+#developers{
+    background-color: #979ff5;
+    color: white;
+}
+#servers{
+    background-color: #58baf2;
+    color: black;
+}
+#bots{
+    background-color: #8488b8;
+    color: white;
+}
+.block {
+    border: 2px solid black;
+    float: left;
+    background-color: #dcddde;
+    margin: 10px;
+    height: 161px;
+}
+
+/* Desktop View */
+@media (min-width:992px){
+    .element{
+        width: 33%;
+    }
+    .block {
+        width: 100%;
+    }
+}
+/* Tablet */
+@media (min-width:768px ) and (max-width:991px){
+    .element{
+        width: 50%;
+    }
+    .block {
+        width: 100%;
+    }
+    #sushiBlock{
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .block {
+        width: 100%;
+    }
+}
